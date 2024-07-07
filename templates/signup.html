@@ -1,0 +1,68 @@
+<HTML>
+    <HEAD>
+      <Link rel="stylesheet" href="../static/css/signup.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="https://kit.fontawesome.com/0a05ea1ff3.js" crossorigin="anonymous"></script>
+      <script src="../static/js/jquery-3.4.1.min.js"></script>
+      <script src="../static/js/bootstrap-4.4.1.js"></script>
+
+        <script>
+          jQuery(document).ready(function($) {
+          tab = $('.tabs h3 a');
+        
+          tab.on('click', function(event) {
+            event.preventDefault();
+            tab.removeClass('active');
+            $(this).addClass('active');
+        
+            tab_content = $(this).attr('href');
+            $('div[id$="tab-content"]').removeClass('active');
+            $(tab_content).addClass('active');
+          });
+        });
+        </script>
+    </HEAD>
+
+    <BODY>
+        <div class="form-wrap">
+            <div class="tabs">
+              <h3 class="customer-tab"><a class="active" href="#customer-tab-content">Customer</a></h3>
+              <h3 class="seller-tab"><a href="#seller-tab-content">Seller</a></h3>
+            </div><!--.tabs-->
+        
+            <div class="tabs-content">
+              <div id="customer-tab-content" class="active">
+                <form class="customer-form" action="/customersignup" method="post">
+                  <input type="text" class="input" id="user_name" autocomplete="off" placeholder="Username" name = "Username" required>
+                  <input type="text" class="input" id="name" autocomplete="off" placeholder="Name" name = "Name" required>
+                  <input type="email" class="input" id="email" autocomplete="off" placeholder="Email" name="Email" required>
+                  <input type="tel" class="input" id="contact_no" autocomplete="off" pattern="[0-9]{10}" placeholder="Contact Number" name="Contact_Number" required>
+                  <input type="text" class="input" id="address" autocomplete="off" placeholder="Address" name="Address" required>
+                  <input type="password" class="input" id="password" autocomplete="off" placeholder="Password" name="Password" required> 
+                  <input type="submit" class="button" value="Signup As Customer">
+                </form><!--.customer-form-->
+                <div class="help-text">
+                  <p><a href = {{ url_for('login') }}>Already Signed up? Login here</a></p>
+                </div><!--.help-text-->
+              </div><!--.customer-tab-content-->
+        
+              <div id="seller-tab-content">
+                <form class="seller-form" action="/sellersignup" method="post">
+                  <input type="text" class="input" id="user_name" autocomplete="off" placeholder="Username" name = "Username" required>
+                  <input type="text" class="input" id="name" autocomplete="off" placeholder="Name" name = "Name" required>
+                  <input type="email" class="input" id="email" autocomplete="off" placeholder="Email" name="Email" required>
+                  <input type="tel" class="input" id="contact_no" autocomplete="off" pattern="[0-9]{10}" placeholder="Contact Number" name="Contact_Number" required>
+                  <input type="text" class="input" id="address" autocomplete="off" placeholder="Address" name="Address" required>
+                  <input type="password" class="input" id="password" autocomplete="off" placeholder="Password" name="Password" required> 
+                  <input type="submit" class="button" value="Signup As Seller">
+                </form><!--.customer-form-->
+                <div class="help-text">
+                  <p><a href = {{ url_for('login') }}>Already Signed up? Login here</a></p>
+                </div><!--.help-text-->
+              </div><!--.customer-tab-content-->
+            </div><!--.tabs-content-->
+          </div><!--.form-wrap-->    
+    </BODY>
+</HTML>

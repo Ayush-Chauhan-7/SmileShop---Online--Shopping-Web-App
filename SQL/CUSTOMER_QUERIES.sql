@@ -1,0 +1,10 @@
+insert into Customer_Queries (Query_ID, QCustomerID, CC_ID, LogTime, Query) values (1, 3, 5, '2021-09-29 16:27:18', 'cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi');
+insert into Customer_Queries (Query_ID, QCustomerID, CC_ID, LogTime, Query) values (2, 9, 6, '2021-06-21 08:48:41', 'massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque');
+insert into Customer_Queries (Query_ID, QCustomerID, CC_ID, LogTime, Query) values (3, 6, 2, '2021-03-29 12:25:21', 'ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero');
+insert into Customer_Queries (Query_ID, QCustomerID, CC_ID, LogTime, Query) values (4, 7, 8, '2022-01-18 17:21:31', 'nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla');
+insert into Customer_Queries (Query_ID, QCustomerID, CC_ID, LogTime, Query) values (5, 1, 4, '2022-01-18 03:33:06', 'est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl');
+insert into Customer_Queries (Query_ID, QCustomerID, CC_ID, LogTime, Query) values (6, 5, 7, '2021-10-05 22:23:50', 'vel enim sit amet nunc viverra dapibus nulla suscipit ligula in');
+insert into Customer_Queries (Query_ID, QCustomerID, CC_ID, LogTime, Query) values (7, 8, 10, '2021-09-11 07:39:58', 'nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper');
+insert into Customer_Queries (Query_ID, QCustomerID, CC_ID, LogTime, Query) values (8, 4, 3, '2021-08-14 04:18:09', 'mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum');
+insert into Customer_Queries (Query_ID, QCustomerID, CC_ID, LogTime, Query) values (9, 2, 9, '2021-05-23 20:57:50', 'orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer');
+insert into Customer_Queries (Query_ID, QCustomerID, CC_ID, LogTime, Query) values (10, 10, 1, '2021-10-03 13:19:39', 'dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit');
